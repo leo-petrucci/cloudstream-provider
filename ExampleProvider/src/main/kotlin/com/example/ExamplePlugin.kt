@@ -12,6 +12,7 @@ class TestPlugin: Plugin() {
     var activity: AppCompatActivity? = null
 
     override fun load(context: Context) {
+        Log.v("idk","fuckoff")
         activity = context as AppCompatActivity
         // All providers should be added in this manner
         registerMainAPI(ExampleProvider(this))
